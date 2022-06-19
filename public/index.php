@@ -6,10 +6,13 @@ spl_autoload_register(function($className) {
 
 use Test\Test1;
 use Test\Test2;
+use Test\SubTest\Test3;
 
 $test1 = new Test1();
 $test2 = new Test2();
+$test3 = new Test3();
+
 $test1->printHello();
-echo ' ';
+$test3->printStr(' ');
 $test2->printWorld();
-echo '!';
+$test3->printStr('!');
